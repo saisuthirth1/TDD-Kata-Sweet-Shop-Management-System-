@@ -1,4 +1,4 @@
-# Sweet Shop Management System
+# Sweet Shop Management System  
 
 <img width="975" height="522" alt="image" src="https://github.com/user-attachments/assets/3cf8e275-dca9-42b4-8f9a-138542120110" />
 
@@ -158,7 +158,7 @@ Our main interface features:
 - `PUT /api/sweets/{id}` - Update sweet details
 - `DELETE /api/sweets/{id}` - Remove a sweet
 - `POST /api/sweets/{id}/restock` - Restock sweet quantity
-- `POST /api/sweets/{id}/purchase` - Purchase sweet
+- `POST /api/sweets/{id}/purchase` - Purchase sweet  
 
 <img width="975" height="498" alt="image" src="https://github.com/user-attachments/assets/fb19a0de-cf3f-4ecf-b955-617b59974486" />
 
@@ -190,7 +190,7 @@ Content-Type: application/json
 {
   "quantity": number
 }
-```
+```  
 <img width="975" height="486" alt="image" src="https://github.com/user-attachments/assets/7bce5373-85e0-4dc5-9ad1-bdc75aa3fea9" />
 
 
@@ -235,26 +235,26 @@ Sample response shows:
   - Stock quantity
   - Sweet name and category
   - Price and description
-  - Image URL
-<img width="975" height="489" alt="image" src="https://github.com/user-attachments/assets/88a1feb4-d207-4b03-8eb7-062cdb547cb4" />
+  - Image URL  
+<img width="975" height="489" alt="image" src="https://github.com/user-attachments/assets/88a1feb4-d207-4b03-8eb7-062cdb547cb4" />  
 <img width="975" height="467" alt="image" src="https://github.com/user-attachments/assets/cbfa307f-0716-427b-acf7-4de4449e465f" />
 
 ### Adding of New Sweet
--> Adding using frontend
+-> Adding using frontend  
 
 <img width="1914" height="972" alt="image" src="https://github.com/user-attachments/assets/8a2d3468-2070-49e8-a5df-268cb49f756f" />
--> Adding using backend
+-> Adding using backend  
 
 <img width="975" height="493" alt="image" src="https://github.com/user-attachments/assets/9675dd8b-e1e7-47ba-9dd4-ac1c7e3d5ac7" />
 <img width="975" height="489" alt="image" src="https://github.com/user-attachments/assets/164a7af2-8e96-4c17-b727-0ee2d0c63e22" />
 
 
-### Deleting a Sweet
+### Deleting a Sweet  
 
 <img width="975" height="488" alt="image" src="https://github.com/user-attachments/assets/b5678475-345d-4091-818a-4669bf23199e" />
--> Deleting through Swagger UI
+-> Deleting through Swagger UI  
 
-<img width="975" height="478" alt="image" src="https://github.com/user-attachments/assets/06336d7f-2e08-4d7c-9b86-0c68fa832356" />
+<img width="975" height="478" alt="image" src="https://github.com/user-attachments/assets/06336d7f-2e08-4d7c-9b86-0c68fa832356" />  
 
 <img width="975" height="491" alt="image" src="https://github.com/user-attachments/assets/e86c6a50-c37f-4973-a142-d20fca50640c" />
 
