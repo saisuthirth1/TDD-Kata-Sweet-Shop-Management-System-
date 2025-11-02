@@ -1,5 +1,10 @@
 # Sweet Shop Management System
 
+
+<img width="975" height="522" alt="image" src="https://github.com/user-attachments/assets/3cf8e275-dca9-42b4-8f9a-138542120110" />
+
+
+
 A modern web application for managing an Indian sweet shop inventory, built with React, TypeScript, and Express.js.
 
 ## Getting Started
