@@ -1,0 +1,145 @@
+{
+  "openapi": "3.0.0",
+  "info": {
+    "title": "Sweet Shop API",
+    "version": "1.0.0",
+    "description": "API for managing sweets inventory"
+  },
+  "servers": [
+    {
+      "url": "http://localhost:3000",
+      "description": "Development server"
+    }
+  ],
+  "paths": {
+    "/api/sweets": {
+      "get": {
+        "summary": "Get all sweets",
+        "responses": {
+          "200": {
+            "description": "List of sweets",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/Sweet"
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "summary": "Add a new sweet",
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/Sweet"
+              }
+            }
+          }
+        },
+        "responses": {
+          "201": {
+            "description": "Sweet created successfully"
+          },
+          "400": {
+            "description": "Invalid input"
+          }
+        }
+      }
+    },
+    "/api/sweets/{id}": {
+      "put": {
+        "summary": "Update a sweet",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/Sweet"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Sweet updated successfully"
+          },
+          "404": {
+            "description": "Sweet not found"
+          }
+        }
+      },
+      "delete": {
+        "summary": "Delete a sweet",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Sweet deleted successfully"
+          },
+          "404": {
+            "description": "Sweet not found"
+          }
+        }
+      }
+    }
+  },
+  "components": {
+    "schemas": {
+      "Sweet": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "string"
+          },
+          "name": {
+            "type": "string"
+          },
+          "category": {
+            "type": "string",
+            "enum": ["candy", "chocolate", "milk_sweet", "bengali", "halwa"]
+          },
+          "description": {
+            "type": "string"
+          },
+          "price": {
+            "type": "number",
+            "minimum": 0
+          },
+          "quantity": {
+            "type": "integer",
+            "minimum": 0
+          },
+          "image_url": {
+            "type": "string"
+          }
+        },
+        "required": ["name", "category", "price", "quantity"]
+      }
+    }
+  }
+}

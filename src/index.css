@@ -1,0 +1,187 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
+All colors MUST be HSL.
+*/
+
+@layer base {
+  :root {
+    /* Sweet Shop Theme - Light Mode */
+    --background: 25 95% 98%;
+    --foreground: 340 65% 15%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 340 65% 15%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 340 65% 15%;
+
+    --primary: 340 82% 52%;
+    --primary-foreground: 0 0% 100%;
+    --primary-light: 340 82% 65%;
+    
+    --secondary: 160 84% 39%;
+    --secondary-foreground: 0 0% 100%;
+    --secondary-light: 160 84% 55%;
+
+    --accent: 45 93% 47%;
+    --accent-foreground: 340 65% 15%;
+    --accent-light: 45 93% 65%;
+
+    --muted: 25 40% 94%;
+    --muted-foreground: 340 30% 45%;
+
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 340 25% 90%;
+    --input: 340 25% 90%;
+    --ring: 340 82% 52%;
+
+    --radius: 0.75rem;
+
+    /* Gradients */
+    --gradient-candy: linear-gradient(135deg, hsl(340, 82%, 52%), hsl(45, 93%, 47%));
+    --gradient-mint: linear-gradient(135deg, hsl(160, 84%, 39%), hsl(180, 84%, 45%));
+    --gradient-soft: linear-gradient(180deg, hsl(25, 95%, 98%), hsl(340, 95%, 95%));
+    
+    /* Shadows */
+    --shadow-soft: 0 4px 20px -4px hsl(340 82% 52% / 0.15);
+    --shadow-candy: 0 8px 30px -8px hsl(340 82% 52% / 0.25);
+    --shadow-glow: 0 0 40px hsl(340 82% 52% / 0.2);
+
+    /* Animations */
+    --transition-bounce: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  .dark {
+    /* Sweet Shop Theme - Dark Mode */
+    --background: 340 30% 8%;
+    --foreground: 340 95% 95%;
+
+    --card: 340 25% 12%;
+    --card-foreground: 340 95% 95%;
+
+    --popover: 340 25% 12%;
+    --popover-foreground: 340 95% 95%;
+
+    --primary: 340 82% 58%;
+    --primary-foreground: 0 0% 100%;
+    --primary-light: 340 82% 70%;
+
+    --secondary: 160 84% 45%;
+    --secondary-foreground: 0 0% 100%;
+    --secondary-light: 160 84% 60%;
+
+    --accent: 45 93% 55%;
+    --accent-foreground: 340 30% 8%;
+    --accent-light: 45 93% 70%;
+
+    --muted: 340 20% 20%;
+    --muted-foreground: 340 40% 70%;
+
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 340 20% 22%;
+    --input: 340 20% 22%;
+    --ring: 340 82% 58%;
+
+    /* Dark mode gradients */
+    --gradient-candy: linear-gradient(135deg, hsl(340, 82%, 48%), hsl(45, 93%, 45%));
+    --gradient-mint: linear-gradient(135deg, hsl(160, 84%, 35%), hsl(180, 84%, 40%));
+    --gradient-soft: linear-gradient(180deg, hsl(340, 30%, 8%), hsl(340, 30%, 12%));
+    
+    /* Dark mode shadows */
+    --shadow-soft: 0 4px 20px -4px hsl(0 0% 0% / 0.4);
+    --shadow-candy: 0 8px 30px -8px hsl(340 82% 58% / 0.3);
+    --shadow-glow: 0 0 40px hsl(340 82% 58% / 0.25);
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+    font-feature-settings: "rlig" 1, "calt" 1;
+  }
+
+  /* Custom scrollbar */
+  ::-webkit-scrollbar {
+    width: 10px;
+  }
+
+  ::-webkit-scrollbar-track {
+    @apply bg-muted;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    @apply bg-primary/50 rounded-full;
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    @apply bg-primary;
+  }
+}
+
+@layer components {
+  /* Candy button variant */
+  .btn-candy {
+    @apply bg-gradient-to-br from-primary to-accent text-white font-semibold shadow-candy hover:shadow-glow;
+    @apply transition-all duration-300 hover:scale-105;
+  }
+
+  /* Glass effect */
+  .glass {
+    @apply bg-card/60 backdrop-blur-xl border border-border/50;
+  }
+
+  /* Bounce animation */
+  .bounce-in {
+    animation: bounceIn 0.6s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  }
+
+  @keyframes bounceIn {
+    0% {
+      transform: scale(0.3);
+      opacity: 0;
+    }
+    50% {
+      transform: scale(1.05);
+    }
+    70% {
+      transform: scale(0.9);
+    }
+    100% {
+      transform: scale(1);
+      opacity: 1;
+    }
+  }
+
+  /* Shimmer effect */
+  .shimmer {
+    background: linear-gradient(
+      90deg,
+      hsl(var(--muted)) 0%,
+      hsl(var(--muted-foreground) / 0.1) 50%,
+      hsl(var(--muted)) 100%
+    );
+    background-size: 200% 100%;
+    animation: shimmer 2s infinite;
+  }
+
+  @keyframes shimmer {
+    0% {
+      background-position: -200% 0;
+    }
+    100% {
+      background-position: 200% 0;
+    }
+  }
+}
