@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 **Use your preferred IDE**
 
 If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
@@ -110,3 +111,6 @@ Using AI tools significantly improved my development workflow in several ways:
    - Had to ensure consistency across AI suggestions
 
 The combination of GitHub Copilot and ChatGPT proved invaluable in building a robust application while maintaining high code quality and following best practices.
+=======
+# TDD-Kata-Sweet-Shop-Management-System-
+>>>>>>> c2cbb5ca36d634b0f6b93284eb5d10ddf4675692
