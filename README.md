@@ -258,6 +258,16 @@ Sample response shows:
 
 <img width="975" height="491" alt="image" src="https://github.com/user-attachments/assets/e86c6a50-c37f-4973-a142-d20fca50640c" />
 
+## Filters
+
+-> Filter using ₹ 50.00  
+
+<img width="1919" height="951" alt="image" src="https://github.com/user-attachments/assets/fc481636-4b12-491e-88b2-3b81e5cac23b" />
+
+-> Filter of Bengali sweets  
+
+<img width="1918" height="968" alt="image" src="https://github.com/user-attachments/assets/fe76f3bd-a313-4f34-a041-a02d06d57963" />
+
 
 
 The API provides:
