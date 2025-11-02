@@ -239,16 +239,21 @@ Sample response shows:
 
 ### Adding of New Sweet
 -> Adding using frontend
+
 <img width="1914" height="972" alt="image" src="https://github.com/user-attachments/assets/8a2d3468-2070-49e8-a5df-268cb49f756f" />
 -> Adding using backend
+
 <img width="975" height="493" alt="image" src="https://github.com/user-attachments/assets/9675dd8b-e1e7-47ba-9dd4-ac1c7e3d5ac7" />
 <img width="975" height="489" alt="image" src="https://github.com/user-attachments/assets/164a7af2-8e96-4c17-b727-0ee2d0c63e22" />
 
 
 ### Deleting a Sweet
+
 <img width="975" height="488" alt="image" src="https://github.com/user-attachments/assets/b5678475-345d-4091-818a-4669bf23199e" />
-Deleting through Swagger UI
+-> Deleting through Swagger UI
+
 <img width="975" height="478" alt="image" src="https://github.com/user-attachments/assets/06336d7f-2e08-4d7c-9b86-0c68fa832356" />
+
 <img width="975" height="491" alt="image" src="https://github.com/user-attachments/assets/e86c6a50-c37f-4973-a142-d20fca50640c" />
 
 
