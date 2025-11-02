@@ -97,6 +97,7 @@ This project is built with:
 - React
 - shadcn-ui
 - Tailwind CSS
+- SQLite
 
 
 ## Project Overview
