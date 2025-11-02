@@ -97,6 +97,7 @@ This project is built with:
 - React
 - shadcn-ui
 - Tailwind CSS
+- JSON Web Token (JWT) for secure authentication
 - SQLite
 
 
