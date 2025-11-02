@@ -258,7 +258,7 @@ Sample response shows:
 
 <img width="975" height="491" alt="image" src="https://github.com/user-attachments/assets/e86c6a50-c37f-4973-a142-d20fca50640c" />
 
-## Filters
+### Filters
 
 -> Filter using ₹ 50.00  
 
@@ -268,6 +268,52 @@ Sample response shows:
 
 <img width="1918" height="968" alt="image" src="https://github.com/user-attachments/assets/fe76f3bd-a313-4f34-a041-a02d06d57963" />
 
+### GET in Swagger UI  
+
+<img width="1916" height="967" alt="image" src="https://github.com/user-attachments/assets/892decd1-e2d7-4163-87c8-9c3f1f77a741" />
+
+<img width="1907" height="974" alt="image" src="https://github.com/user-attachments/assets/eb4daf64-a62b-4b4d-af5a-b6991f7c1e33" />
+
+```http
+[
+  {
+    "id": "1",
+    "name": "Gulab Jamun",
+    "category": "milk_sweet",
+    "description": "Deep-fried milk solid dumplings soaked in sugar syrup",
+    "price": 40,
+    "quantity": 100,
+    "image_url": "https://example.com/gulab-jamun.jpg"
+  },
+  {
+    "id": "2",
+    "name": "Rasgulla",
+    "category": "bengali",
+    "description": "Spongy milk balls in light sugar syrup",
+    "price": 35,
+    "quantity": 80,
+    "image_url": "https://example.com/rasgulla.jpg"
+  },
+  {
+    "id": "3",
+    "name": "Kaju Katli",
+    "category": "candy",
+    "description": "Diamond-shaped cashew fudge",
+    "price": 80,
+    "quantity": 50,
+    "image_url": "https://example.com/kaju-katli.jpg"
+  },
+  {
+    "id": "5",
+    "name": "Gulab Jamun",
+    "category": "sweet",
+    "description": "Soft, deep-fried milk dumplings soaked in cardamom-flavored sugar syrup. Pack of 6.",
+    "price": 120,
+    "quantity": 40,
+    "image_url": "https://i0.wp.com/www.chitrasfoodbook.com/wp-content/uploads/2016/10/gulab-jamun-using-mix.jpg?w=1200&ssl=1"
+  }
+]
+```  
 
 
 The API provides:
