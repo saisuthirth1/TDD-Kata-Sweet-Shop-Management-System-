@@ -1,5 +1,56 @@
-<<<<<<< HEAD
-**Use your preferred IDE**
+# Sweet Shop Management System
+
+A modern web application for managing an Indian sweet shop inventory, built with React, TypeScript, and Express.js.
+
+## Getting Started
+
+### Prerequisites
+
+- Node.js (v14 or higher)
+- npm (v6 or higher)
+
+### Installation
+
+1. Clone the repository:
+```bash
+git clone https://github.com/saisuthirth1/TDD-Kata-Sweet-Shop-Management-System-.git
+cd TDD-Kata-Sweet-Shop-Management-System-
+```
+
+2. Install dependencies for both frontend and backend:
+```bash
+# Install frontend dependencies
+npm install
+
+# Install backend dependencies
+cd server
+npm install
+```
+
+3. Start the development servers:
+
+In one terminal (for backend):
+```bash
+cd server
+npm start
+```
+
+In another terminal (for frontend):
+```bash
+npm run dev
+```
+
+4. Open http://localhost:5173 in your browser
+
+## Features
+
+- View and manage Indian sweets inventory
+- Search and filter sweets by category and price
+- Real-time stock management
+- Admin dashboard for inventory control
+- Responsive design for all devices
+
+## Usage
 
 If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
 
@@ -64,6 +115,126 @@ Sugar Craft Quest is a modern web application for managing an Indian sweet shop 
 - **Responsive Design**: Works seamlessly on all devices
 - **Modern UI**: Built with shadcn/ui and Tailwind CSS
 
+## Application Screenshots and Features
+
+### Main Interface - Sweet Shop Dashboard
+Our beautiful sweet shop interface showcases various Indian sweets:
+
+🍬 **Featured Sweets:**
+- Gulab Jamun (₹40) - Deep-fried milk solid dumplings in sugar syrup
+- Rasgulla (₹35) - Spongy milk balls in light sugar syrup
+- Kaju Katli (₹80) - Diamond-shaped cashew fudge
+- Gajar Ka Halwa (₹60) - Traditional carrot pudding
+
+**Key Features:**
+- 🔍 Smart search functionality
+- 📊 Category-based filtering
+- 💰 Price range filters
+- 📦 Real-time stock management
+- 🛍️ Quick purchase options
+
+Our beautiful sweet shop interface shows Indian sweets like Gulab Jamun (₹40.00), Rasgulla (₹35.00), Kaju Katli (₹80.00), and Gajar Ka Halwa (₹60.00). Each sweet card displays:
+- Sweet name and category
+- Detailed description
+- Current stock level
+- Price in Indian Rupees (₹)
+- Buy Now button for purchases
+
+Our main interface features:
+- Beautiful sweet cards with images and descriptions
+- Search functionality with real-time filtering
+- Category and price range filters
+- Stock information for each sweet
+- Easy-to-use purchase and restock buttons
+
+### API Documentation (Swagger UI)
+**Available Endpoints:**
+- `GET /api/sweets` - Retrieve all sweets
+- `POST /api/sweets` - Add a new sweet
+- `PUT /api/sweets/{id}` - Update sweet details
+- `DELETE /api/sweets/{id}` - Remove a sweet
+- `POST /api/sweets/{id}/restock` - Restock sweet quantity
+- `POST /api/sweets/{id}/purchase` - Purchase sweet
+
+**Documentation Features:**
+- 📚 Interactive API testing
+- 🔐 Authentication documentation
+- 📋 Request/response schemas
+- ❌ Error handling details
+
+The Swagger UI provides comprehensive API documentation for:
+- GET /api/sweets - List all sweets
+- POST /api/sweets - Add a new sweet
+- POST /api/sweets/{id}/restock - Restock sweets
+- DELETE /api/sweets/{id} - Remove a sweet
+
+Complete API documentation with:
+- All available endpoints
+- Request/response schemas
+- Authentication details
+- Interactive testing interface
+
+### API Implementation Details
+
+**Restock Endpoint:**
+```http
+POST /api/sweets/{id}/restock
+Content-Type: application/json
+
+{
+  "quantity": number
+}
+```
+
+**Response:**
+- 200: Sweet restocked successfully
+- 400: Invalid quantity
+- 404: Sweet not found
+
+The restock endpoint allows:
+- Adding stock to existing sweets
+- Required parameters: sweet ID and quantity
+- JSON request body with quantity field
+- Returns updated sweet details
+
+Example of the restock endpoint showing:
+- Endpoint parameters
+- Request body structure
+- Response format
+- Error handling
+
+### Example API Response
+
+```json
+{
+  "id": "3",
+  "name": "Kaju Katli",
+  "category": "candy",
+  "description": "Diamond-shaped cashew fudge",
+  "price": 80,
+  "quantity": 60,
+  "image_url": "https://example.com/kaju-katli.jpg"
+}
+```
+
+**Response Headers:**
+- `Content-Type: application/json`
+- `Status: 200 OK`
+
+Sample response shows:
+- Success status code (200)
+- Updated sweet details including:
+  - Stock quantity
+  - Sweet name and category
+  - Price and description
+  - Image URL
+
+The API provides:
+- Detailed response information
+- Status codes
+- Updated sweet details
+- Proper error messages when needed
+
 ### Technical Stack
 
 - **Frontend**: React, TypeScript, Vite
@@ -111,6 +282,3 @@ Using AI tools significantly improved my development workflow in several ways:
    - Had to ensure consistency across AI suggestions
 
 The combination of GitHub Copilot and ChatGPT proved invaluable in building a robust application while maintaining high code quality and following best practices.
-=======
-# TDD-Kata-Sweet-Shop-Management-System-
->>>>>>> c2cbb5ca36d634b0f6b93284eb5d10ddf4675692
