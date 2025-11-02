@@ -103,7 +103,7 @@ This project is built with:
 
 ## Project Overview
 
-Sugar Craft Quest is a modern web application for managing an Indian sweet shop inventory. The application allows users to:
+Sugar Craft is a modern web application for managing an Indian sweet shop inventory. The application allows users to:
 - View a catalog of Indian sweets with details and stock levels
 - Search and filter sweets by category and price range
 - Purchase sweets with real-time stock updates
@@ -329,11 +329,12 @@ The API provides:
 - **Backend**: Express.js
 - **API Documentation**: Swagger UI
 - **State Management**: React Hooks
+- **Authentication**: JSON Web Tokens (JWT)
 - **Animations**: Framer Motion
 
 ## My AI Usage
 
-During the development of Sugar Craft Quest, I leveraged several AI tools to enhance my development workflow and improve code quality:
+During the development of Sugar Craft, I leveraged several AI tools to enhance my development workflow and improve code quality:
 
 ### GitHub Copilot
 
